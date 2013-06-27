@@ -10,6 +10,8 @@ script usage :
 	now you can generate your .rss file with
 		./main.sh confPath
 	default confPath is conf/USERNAME.sh
+	the RSS will be generated in 
+		tmp/rss_USERNAME.rss
 
 web interface usage :
 	TODO
