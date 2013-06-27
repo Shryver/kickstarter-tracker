@@ -94,8 +94,12 @@ function fetchData {
 }
 
 function fetchInfos {
-	rm $TXTFILE
-	rm $RSSFILE
+	if [[ -f $TXTFILE ]]; then
+		rm $TXTFILE
+	fi
+	if [[ -f $TXTFILE ]]; then
+		rm $RSSFILE
+	fi
 	a=$BASE
 	rssFileBegin
 	for project in `cat $DBFILE`; do

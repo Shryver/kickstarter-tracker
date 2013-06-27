@@ -25,6 +25,19 @@ function usage {
 }
 
 function createFile {
+	if [[ ! -d tmp/ ]]; then
+		mkdir tmp
+	fi
+	if [[ ! -d conf/ ]]; then
+		mkdir conf
+	fi
+	if [[ ! -d db/ ]]; then
+		mkdir db
+	fi
+	if [[ ! -f db/db_$1 ]]; then
+		touch db/db_$1
+	fi
+
 	echo "USER=$1"	> $beg$1$end
 	cat skel/skel.sh>> $beg$1$end
 	chmod +x $beg$1$end
