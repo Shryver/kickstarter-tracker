@@ -1,0 +1,12 @@
+to install, put the scripts in a directory.
+put the web interface in another one.
+edit the config.ini file in the web interface to tell
+it where the scripts are.
+
+once your server is running, ensure that the .ini files
+are not served by your web server. (.htaccess for apache etc)
+
+then, you just have to access http://youraddress:port/index.php
+to begin using it.
+
+note that the web interface is not done yet.

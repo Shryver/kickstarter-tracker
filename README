@@ -1,0 +1,15 @@
+kickstarter tracker.
+
+script usage :
+	create a profile with ./createConfig USERNAME
+	then you can add ks projects with
+		./addProject.sh dbPath projectUrl
+	you can remove them with
+		./delProject.sh dbPath projectUrl
+	default dbPath is db/db_USERNAME
+	now you can generate your .rss file with
+		./main.sh confPath
+	default confPath is conf/USERNAME.sh
+
+web interface usage :
+	TODO
