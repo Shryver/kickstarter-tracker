@@ -36,7 +36,7 @@ function fetchTimeUnit {
 }
 
 function rssFileBegin {
-	echo "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"		>> $RSSFILE
+	echo "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"		>  $RSSFILE
 	echo "<rss version=\"2.0\">"					>> $RSSFILE
 	echo "<channel>"						>> $RSSFILE
 	echo "  <title>Kickstarter - $USER </title>"			>> $RSSFILE
